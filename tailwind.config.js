@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+<<<<<<< HEAD
   content: ["./src/**/*.{html,js}"],
+=======
+  content: ["./**/*.{html,js}"],
+>>>>>>> a0786d5 (edit navbar)
   theme: {
     extend: {
       colors:{

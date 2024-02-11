@@ -740,19 +740,14 @@ video {
   padding-right: 2.25rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .align-middle {
@@ -878,5 +873,17 @@ video {
 
   .md\:p-0 {
     padding: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:ml-10 {
+    margin-left: 2.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:ml-20 {
+    margin-left: 5rem;
   }
 }
