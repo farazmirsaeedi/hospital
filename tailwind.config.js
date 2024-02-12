@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-<<<<<<< HEAD
+
   content: ["./src/**/*.{html,js}"],
-=======
-  content: ["./**/*.{html,js}"],
->>>>>>> a0786d5 (edit navbar)
-  theme: {
+
     extend: {
       colors:{
         primery:'#0694A2',
@@ -20,6 +17,5 @@ module.exports = {
         '12': '3.5rem',
       }
     },
-  },
-  plugins: [],
-}
+  }
+  
