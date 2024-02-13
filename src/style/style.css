@@ -6,14 +6,6 @@
     font-family: 'vazir';
     src: url(../asset/fonts/vazirmatn/Vazirmatn-Medium.ttf);
 }
-
-@media (min-width:700px) {
-    body{
-        background-image: url("../asset/bg.png");
-        background-position: inherit;
-        background-repeat: no-repeat;
-    } 
-}
 .main{
     height: 75vh;
 }
@@ -21,4 +13,66 @@
     width: 25px;
     /* height: 5px; */
     transform: translateX(-13px) translateY(-36px);
+}
+.flex-css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col-css{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sozan{
+    transform: translateX(40px) translateY(-39px);
+}
+
+.prog-ring{
+    position: absolute;
+    z-index: 50;
+    top: 53px;
+}
+.p-prog{
+    position: absolute;
+    z-index: 50;
+    top: 101px;
+    left: 123px;
+}
+.p-prog-2{
+    position: absolute;
+    z-index: 50;
+    top: 99px;
+    left: 111px;
+}
+.div-prog ul li::marker {
+    font-size: 1rem;
+  }
+  .ulscroll ul li::marker {
+    font-size: 1rem;
+  }
+  .back-th{
+    background-color: #69BEC7;
+    padding: 10px;
+  }
+  .borr{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+  }
+  .borl{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+
+    
+  }
+
+
+@media (min-width:700px) {
+    body{
+        background-image: url("../asset/bg.png");
+        background-position: inherit;
+        background-repeat: no-repeat;
+    } 
 }

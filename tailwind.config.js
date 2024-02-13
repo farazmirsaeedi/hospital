@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
-  content: ["./src/**/*.{html,js}"],
-
+  content: ["./**/*.{html,js}"],
+  theme: {
     extend: {
       colors:{
         primery:'#0694A2',
         primery_opacity:'#69BEC7',
-        secondery:'#535353'
+        secondery:'#535353',
+        bacg:'#EBF6F8'
       },
       fontFamily:{
         'vazir':'vazir'
@@ -17,5 +17,6 @@ module.exports = {
         '12': '3.5rem',
       }
     },
-  }
-  
+  },
+  plugins: [],
+}
