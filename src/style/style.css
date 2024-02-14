@@ -6,6 +6,28 @@
     font-family: 'vazir';
     src: url(../asset/fonts/vazirmatn/Vazirmatn-Medium.ttf);
 }
+
+.dark{
+    background-color: rgba(32, 32, 32, 0.829);
+    
+}
+.dark .bg--dark{
+    background-color: rgb(119, 119, 119);
+}
+.dark p {
+    color: whitesmoke;
+}
+.dark #mod p {
+    color: rgb(0, 0, 0);
+}
+.dark h1 {
+    color: whitesmoke;
+}
+.dark table {
+    color: whitesmoke;
+}
+
+
 .main{
     height: 75vh;
 }
@@ -67,6 +89,8 @@
 
     
   }
+
+
 
 
 @media (min-width:700px) {
