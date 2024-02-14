@@ -27,11 +27,11 @@
     </div>
     <div class="form-css w-96 flex flex-col items-center mx-auto md:mr-72 mt-10">
         <h2  class="md:mr-10 text-primery_opacity font-bold text-4xl mr-0 mb-9">ورود</h2>
-<form x-data="{showpPass:false}" class="flex flex-col space-y-2 w-80">
+<form action="#" x-data="{showpPass:false}" class="flex flex-col space-y-2 w-80">
     <label class="text-gray-400 " for="username">نام کاربری</label>
-    <input class="bg-slate-100 rounded-lg p-2 " type="text">
+    <input class="bg-slate-100 rounded-lg p-2 " placeholder="نام کاربری" type="text">
     <label  class="text-gray-400" for="password">رمز عبور</label>
-    <input x-bind:type="showpPass? 'text' : 'password'" class="bg-slate-100 rounded-lg p-2 " dir="ltr">
+    <input x-bind:type="showpPass? 'text' : 'password'" class="bg-slate-100 rounded-lg p-2 " placeholder="رمز عبور" dir="ltr">
     <button @click="showpPass= !showpPass">
         <img class="eye" src="asset/eye.svg">
     </button>
