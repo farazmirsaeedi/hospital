@@ -26,6 +26,9 @@
 .dark table {
     color: whitesmoke;
 }
+/* .dirr{
+    direction: ltr;
+} */
 
 
 .main{
@@ -89,6 +92,11 @@
 
     
   }
+  .over--f{
+    
+    overflow: scroll;
+  }
+
 
 
 
