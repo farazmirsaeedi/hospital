@@ -661,8 +661,16 @@ video {
   isolation: auto;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-span-8 {
   grid-column: span 8 / span 8;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .float-start {
@@ -798,6 +806,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .box-border {
@@ -1336,6 +1348,10 @@ video {
 
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2402,6 +2418,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -2870,6 +2891,12 @@ video {
   overflow: scroll;
 }
 
+.bbbb{
+  border:1px solid #69BEC7;
+  -webkit-clip-path: polygon(0 0,calc(100% - var(--s)) 0,100% var(--s),100% 100%,0 100%) !important;
+          clip-path: polygon(0 0,calc(100% - var(--s)) 0,100% var(--s),100% 100%,0 100%) !important;
+}
+
 @media (min-width:700px) {
   body{
     background-image: url("../asset/bg.png");
@@ -2937,6 +2964,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2955,16 +2986,16 @@ video {
     margin-left: 2.25rem;
   }
 
-  .md\:mr-10 {
-    margin-right: 2.5rem;
-  }
-
   .md\:mr-72 {
     margin-right: 18rem;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .md\:mt-10 {
@@ -3007,6 +3038,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3024,6 +3059,10 @@ video {
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
   }
+
+  .lg\:flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -3034,6 +3073,10 @@ video {
   .xl\:mr-20 {
     margin-right: 5rem;
   }
+
+  .xl\:mt-1 {
+    margin-top: 0.25rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -3043,6 +3086,10 @@ video {
 
   .\32xl\:mr-24 {
     margin-right: 6rem;
+  }
+
+  .\32xl\:mt-10 {
+    margin-top: 2.5rem;
   }
 }
 
