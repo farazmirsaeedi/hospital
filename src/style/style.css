@@ -58,19 +58,22 @@
 .prog-ring{
     position: absolute;
     z-index: 50;
-    top: 53px;
+    top: 0px;
+}
+.div-prog{
+    position: relative;
 }
 .p-prog{
     position: absolute;
     z-index: 50;
-    top: 101px;
-    left: 123px;
+    top: 50px;
+    left: 70px;
 }
 .p-prog-2{
     position: absolute;
     z-index: 50;
-    top: 99px;
-    left: 111px;
+    top: 55px;
+    left: 73px;
 }
 .div-prog ul li::marker {
     font-size: 1rem;
