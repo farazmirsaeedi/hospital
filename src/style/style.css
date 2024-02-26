@@ -104,7 +104,12 @@
     clip-path: polygon(0 0,calc(100% - var(--s)) 0,100% var(--s),100% 100%,0 100%) !important;
 
 }
-
+.absol--css{
+    position: absolute;
+    top: -7px;
+    right: -3px;
+    padding: 2px 8px;
+}
 
 
 @media (min-width:700px) {
