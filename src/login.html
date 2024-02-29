@@ -27,16 +27,18 @@
     </div>
     <div class="form-css w-96 flex flex-col items-center mx-auto md:mr-72 mt-10  xl:mt-1 2xl:mt-10">
         <h2  class=" text-primery_opacity font-bold text-4xl mr-0 mb-9">ورود</h2>
-<form action="#" x-data="{showpPass:false}" class="flex flex-col space-y-2 w-80">
+<form action="#" id="form" x-data="{showpPass:false}" class="flex flex-col space-y-2 w-80">
     <label class="text-gray-400 " for="username">نام کاربری</label>
-    <input class="bg-slate-100 rounded-lg p-2 " placeholder="username" dir="ltr" type="text">
+    <input id="user" class="bg-slate-100 rounded-lg p-2 " placeholder="username" dir="ltr" type="text">
+    <span id="span-user" class="hidden text-red-600 text-sm"></span>
     <label  class="text-gray-400" for="password">رمز عبور</label>
-    <input x-bind:type="showpPass? 'text' : 'password'" class="bg-slate-100 rounded-lg p-2 " placeholder="password" dir="ltr">
+    <input id="password" x-bind:type="showpPass? 'text' : 'password'" class="bg-slate-100 rounded-lg p-2 " placeholder="password" dir="ltr">
     <button @click="showpPass= !showpPass">
         <img class="eye" src="asset/eye.svg">
     </button>
+    <span id="span-password" class="hidden text-red-600 text-sm"></span>
 
-    <button class="text-white text-bold bg-primery_opacity p-1.5 rounded-lg ">ورود</button>
+    <button id="btn" class="text-white text-bold bg-primery_opacity p-1.5 rounded-lg ">ورود</button>
     <a class="text-secondery " href="#">فراموشی رمز عبور</a>
 
 
@@ -44,6 +46,7 @@
     </div>
     
 </body>
+<script src="../main.js"></script>
 <script>
     console.log(window.innerWidth);
 </script>
